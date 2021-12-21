@@ -17,4 +17,5 @@ Email
 Nickname
 Tipo di utente
 
--
+-Quando la connessione viene interrotta può essere fermata volontariamente con il tasto stop, nel caso non venisse premuto il bottone e la posizione non viene condivisa ogni 
+?sec chi è in ascolto riceve messaggio di errore che connessione fermata in modo anomalo.
