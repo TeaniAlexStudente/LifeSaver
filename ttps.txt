@@ -1,0 +1,29 @@
+1. Registrazione account (utente U/G utente-genitore)
+    1.1 Utente
+        End Point: /registrazione_U
+        Input: cognome, nome, username, password,email
+        Output:
+    1.2 Genitore
+        End Point: /registrazione_G
+        Input: cognome, nome, username, password,email
+        Output:
+
+2. Login account (utente U/G utente-genitore)
+    2.1 Utente
+        End Point: /login_U 
+        Input: username, password
+        Output:
+    2.2 Genitore
+        End Point: /login_C 
+        Input: username, password
+        Output:
+
+3. Connessione fra i due utenti (utente-genitore)
+    3.1 utente
+        End Point: /tracking
+        Input: 
+        Output:
+    3.2 genitore
+        End Point: /ricezione
+        Input: 
+        Output:
