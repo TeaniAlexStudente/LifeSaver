@@ -39,7 +39,7 @@
             
             Statement st = connection.createStatement();
             String query2 = "SELECT * FROM Genitori WHERE email = '"+mail+"';";           
-            String query = "INSERT INTO Genitori (username, password, email) VALUES ('"+username+"', '"+password+"', '"+mail+"')";
+            String query = "INSERT INTO Genitori (username, password, email, nome, cognome) VALUES ('"+username+"', '"+password+"', '"+mail+"', '"+nome+"' , '"+cognome+"')";
             ResultSet result = st.executeQuery(query2);
             if(result.next()){
                 out.println("<p>Esiste già un account con queste credenziali</p>");

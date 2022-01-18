@@ -35,13 +35,13 @@
             username=request.getParameter("username");
             password=request.getParameter("password");
             connection = DriverManager.getConnection("jdbc:ucanaccess://" + request.getServletContext().getRealPath("/") + "Dati.accdb");
-            String query = "SELECT username FROM Utente WHERE username = '"+username+"'AND password = '"+password+"';"; 
+            String query = "SELECT username FROM Utenti WHERE username = '"+username+"'AND password = '"+password+"';"; 
             
             Statement st = connection.createStatement();
             ResultSet result = st.executeQuery(query);
             
             if(result.next()){         
-                response.sendRedirect("loginUtente.html"); 
+                response.sendRedirect(request.getContextPath()+"/login_Utente.html"); 
             }
             else{
                 if((username != null) && (password != null)){

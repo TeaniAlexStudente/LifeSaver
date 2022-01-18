@@ -41,7 +41,7 @@
             ResultSet result = st.executeQuery(query);
             
             if(result.next()){         
-                response.sendRedirect("loginGenitore.html"); 
+                response.sendRedirect(request.getContextPath()+"/login_Genitore.html"); 
             }
             else{
                 if((username != null) && (password != null)){

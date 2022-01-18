@@ -46,8 +46,8 @@
             connection = DriverManager.getConnection("jdbc:ucanaccess://" + request.getServletContext().getRealPath("/") + "Dati.accdb");
             
             Statement st = connection.createStatement();
-            String query2 = "SELECT * FROM Clienti WHERE email = '"+mail+"';";           
-            String query = "INSERT INTO Clienti (username, password, email, nome, cognome) VALUES ('"+username+"', '"+password+"', '"+mail+"', '"+nome+"' , '"+cognome+"')";
+            String query2 = "SELECT * FROM Utenti WHERE email = '"+mail+"';";           
+            String query = "INSERT INTO Utenti (username, password, email, nome, cognome) VALUES ('"+username+"', '"+password+"', '"+mail+"', '"+nome+"' , '"+cognome+"')";
             ResultSet result = st.executeQuery(query2);
             if(result.next()){
                 out.println("<p>Esiste già un account con queste credenziali</p>");
