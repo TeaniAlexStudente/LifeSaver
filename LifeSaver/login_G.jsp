@@ -46,6 +46,7 @@
             else{
                 if((username != null) && (password != null)){
                     out.println("<p>Le credenziali inserite sono errate.</p>");
+					out.println("<p>Controlla di aver inserito correttamente i dati o di essere registrato.</p>");
                 }              
             }
         }

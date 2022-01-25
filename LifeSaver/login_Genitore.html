@@ -8,6 +8,11 @@
     <body>
         <h1>Login effettuato correttamente, scegliere la funzione desiderata.</h1>
 
+		<%
+            String tmp = (String) request.getSession().getAttribute("username");
+            out.println("<h2>Benvenuto "+tmp+"</h2>");
+        %>
+		
         <a href = "ricezione.jsp"> 
             <input type="button" value="Ricevi posizione"/> <br> <br> 
         </a>
