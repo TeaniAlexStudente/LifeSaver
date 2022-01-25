@@ -27,3 +27,18 @@
         End Point: /ricezione
         Input: 
         Output:
+        
+   3.1.1 utente può scrivere promemoria di ciò che succede nel db
+       End Point: /appunti
+       Input: testo
+       Output:
+       
+  3.1.2 utente può leggere i suoi appunti per vedere cosa ha scritto 
+       End Point: /appunti
+       Input:
+       Output: testo scritto attraverso 
+       
+ 3.2.1 genitore può leggere gli appunti del figlio per capire se c'è pericolo
+       End Point:/appunti
+       Input:
+       Output: testo scritto dall'utente collegato
