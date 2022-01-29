@@ -38,10 +38,11 @@
             String query = "SELECT username FROM Genitori WHERE username = '"+username+"'AND password = '"+password+"';"; 
             
             Statement st = connection.createStatement();
-            ResultSet result = st.executeQuery(query);
-            
-            if(result.next()){         
-                response.sendRedirect(request.getContextPath()+"/login_Genitore.html"); 
+            ResultSet result = st.executeQuery(query);			
+			
+          if(result.next()){  
+				session.setAttribute("nome",username);
+                response.sendRedirect(request.getContextPath()+"/login_Genitore.jsp"); 
             }
             else{
                 if((username != null) && (password != null)){

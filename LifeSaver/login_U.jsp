@@ -40,8 +40,9 @@
             Statement st = connection.createStatement();
             ResultSet result = st.executeQuery(query);
             
-            if(result.next()){         
-                response.sendRedirect(request.getContextPath()+"/login_Utente.html"); 
+            if(result.next()){   
+				session.setAttribute("nome",username);			
+                response.sendRedirect(request.getContextPath()+"/login_Utente.jsp"); 
             }
             else{
                 if((username != null) && (password != null)){
