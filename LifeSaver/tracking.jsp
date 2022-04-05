@@ -10,7 +10,7 @@
 
         <h1>Collegamento con LifeSaver</h1>
         <form action= "tracking.jsp" method="POST">
-            <input type = "text" id = "testo" name = "testo" placeholder = "inserire eventuali appunti">
+            <input type = "text" id = "testo" name = "testo" placeholder = "Inserire eventuali appunti">
         </form>
 
         <%

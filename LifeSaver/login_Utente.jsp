@@ -10,9 +10,9 @@
 
 
 		<%
-		out.println("Benvenuto "+session.getAttribute("nome"));
-		
-		%>
+            String tmp = (String) request.getSession().getAttribute("username");
+            out.println("<h2>Benvenuto "+tmp+"</h2>");
+        %>
 		<br>
 		<br>
 		
