@@ -10,9 +10,9 @@
 
 
 		<%
-		out.println("Benvenuto "+session.getAttribute("nome"));
-		
-		%>
+            String tmp = (String) request.getSession().getAttribute("username");
+            out.println("<h2>Benvenuto "+tmp+"</h2>");
+        %>
 		<br>
 		<br>
 		
@@ -20,8 +20,8 @@
             <input type="button" value="Avvia tracking"/> <br> <br> 
         </a>
 
-        <a href = "logOut.jsp"> 
-            <input type="button" value=" Log Out"/> <br> 
+        <a href = "index.html"> 
+            <input type="button" value=" Torna alla home"/> <br> 
         </a>
     </body>
 </html>
