@@ -42,3 +42,8 @@
        End Point:/appunti
        Input:
        Output: testo scritto dall'utente collegato
+       
+       
+       //sistemare login facendo unico login che legge se utente o genitore 
+       //aggiungere la funzione di chat/appunti fra utente e genitore 
+       //aggiungere funzione di invio posizione con invio di coordinate randomiche
