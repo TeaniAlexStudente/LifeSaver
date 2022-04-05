@@ -44,6 +44,9 @@
        Output: testo scritto dall'utente collegato
        
        
-       //sistemare login facendo unico login che legge se utente o genitore 
+       //sistemare login facendo unico login che legge se utente o genitore, tre tabelle la prima contiene i dati generali di un qualsiasi utente che si collega con            chiave esterna ad un'altra tabella che è o tabella genitori o tabella utente dove ci sono il resto dei dati.
+       
        //aggiungere la funzione di chat/appunti fra utente e genitore 
+       
        //aggiungere funzione di invio posizione con invio di coordinate randomiche
+       
