@@ -35,14 +35,19 @@
             username=request.getParameter("username");
             password=request.getParameter("password");
             connection = DriverManager.getConnection("jdbc:ucanaccess://" + request.getServletContext().getRealPath("/") + "Dati.accdb");
-            String query = "SELECT username FROM Genitori WHERE username = '"+username+"'AND password = '"+password+"';"; 
+            String query = "SELECT username,tipo FROM Dati WHERE username = '"+username+"'AND password = '"+password+"';"; 
             
             Statement st = connection.createStatement();
             ResultSet result = st.executeQuery(query);			
 			
-          if(result.next()){  
+          if(result.next())
+          {  
+                
+                String controllo=result.getString(2);
 				session.setAttribute("nome",username);
-                response.sendRedirect(request.getContextPath()+"/login_Genitore.jsp"); 
+                if(controllo==genitore){
+                    response.sendRedirect(request.getContextPath()+"/login_Genitore.jsp");
+                } 
             }
             else{
                 if((username != null) && (password != null)){
